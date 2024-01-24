@@ -1,0 +1,23 @@
+---
+import ServiceCard from "./ServiceCard.astro"
+
+---
+
+<article class="flex flex-col gap-10 justify-center items-center px-10 lg:px-20" id="servicios">
+    <h1 class="font-italiana text-5xl">Servicios</h1>
+    <section>
+        <p class="text-center text-xl font-light">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit ac eros sed condimentum.
+            Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            Curabitur eget libero risus. Fusce sit amet felis sem. Donec at quam in velit pulvinar tincidunt vel id massa. 
+        </p>
+    </section>
+    <section class="grid grid-cols-1 gap-5 lg:grid-cols-2 xl:grid-cols-3">
+        <ServiceCard title="Corte" img_src='/demo2.jpg' content="Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget libero risus. Fusce sit amet felis sem." ></ServiceCard>
+        <ServiceCard title="Peniado" img_src='/demo.jpg' content="Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget libero risus. Fusce sit amet felis sem." ></ServiceCard>
+        <ServiceCard title="Color" img_src='/demo2.jpg' content="Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget libero risus. Fusce sit amet felis sem." ></ServiceCard>
+        <ServiceCard title="Depilación" img_src='/demo3.jpg' content="Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget libero risus. Fusce sit amet felis sem." ></ServiceCard>
+        <ServiceCard title="Alaciado" img_src='/demo.jpg' content="Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget libero risus. Fusce sit amet felis sem." ></ServiceCard>
+        <ServiceCard title="Maquillaje" img_src='/port unblur.jpg' content="Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget libero risus. Fusce sit amet felis sem." ></ServiceCard>
+    </section>
+</article>

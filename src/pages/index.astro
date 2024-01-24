@@ -1,20 +1,36 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Servicios from '../components/Servicios.astro';
+import '@fontsource/urbanist';
+import '@fontsource/italiana';
+import '@fontsource/roboto';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="Isolet Salon.">
 	<main class="">
-		<section>
+		<section class="">
 			<div class="hero-section relative h-screen flex items-center justify-center">
-				<div class="absolute inset-0 bg-cover bg-center brightness-50" style="background-image: url('/port.jpg');"></div>
-				<div class="text-center text-white relative z-10">
-					<h1 class="text-5xl font-bold tracking-widest">A WAY TO GET THE BEST OUT OF YOU</h1>
-					<p class="mt-4 text-2xl font-light tracking-widest"> ISOLET SALON</p>
+				<div class="absolute inset-0 bg-cover bg-center brightness-50" style="background-image: url('/port2.jpg');"></div>
+				<div class="flex flex-col gap-8 text-center text-white relative z-10 p-20 ">
+					<svg viewBox="0 0 100 5">
+						<line x1="0" y1="0" x2="100" y2="0" stroke="white" />
+					</svg>
+					<h1 class="tracking-widest text-5xl lg:text-7xl  font-bold font-italiana ">Descubre tu resplandor, <br/> abraza tu belleza</h1>
+					<p class="mt-4 text-2xl lg:text-3xl font-light tracking-widest font-urbanist"> ISOLET SALON</p>
+					<svg viewBox="0 -5 100 5">
+						<line x1="0" y1="0" x2="100" y2="0" stroke="white" />
+					</svg>
 				</div>
 			</div>
 		</section>
-		<section>
-			Another one that is completely diferent.
+		<section class="flex items-center justify-center font-light p-10 text-2xl z-50" id="about">
+			<p class="text-center">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit ac eros sed condimentum.
+				Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 	
+			</p>
 		</section>
+		<hr
+		class="my-6 h-0.5 border-t-0 bg-neutral-300 opacity-100 dark:opacity-50 mx-10" />
+		<Servicios/>
 	</main>
 </Layout>

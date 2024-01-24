@@ -1,0 +1,25 @@
+---
+
+interface ServiceCardProps{
+
+    img_src:string
+    title:string
+    content:string
+
+}
+
+const { img_src, title, content } = Astro.props;
+
+---
+
+
+<div class="bg-white shadow-md rounded-xl">
+    <a href="/servicios/peinado" class="flex flex-col gap-5">
+    <div class='w-full h-72 overflow-hidden'>
+        <img src={img_src} alt="" class="w-full h-full object-cover rounded-xl" />
+    </div>
+    <div class="py-5">
+        <h1 class="font-bold text-center text-2xl font-italiana tracking-wider">{title}</h1>
+    </div>
+    </a>
+</div>

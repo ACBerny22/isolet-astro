@@ -1,13 +1,28 @@
-<nav class="absolute w-screen z-50 py-5 px-8">
+---
+import '@fontsource/urbanist';
+import BarButton from '../components/NavBarToggle';
+import BarMenu from '../components/BarMenu'
+---
+
+<nav class="absolute w-full z-50 py-5 px-8 font-urbanist">
     <section class="flex text-white justify-between">
-        <div class="font-light text-2xl uppercase tracking-widest">
-            <h1>Isolet Salon</h1>
+        <div class="font-light text-2xl uppercase tracking-widest flex items-center gap-3">
+            <div class='w-16'>
+                <img src="/isolet.png" alt="" />
+            </div>
+            <h1 class="hidden md:flex">Isolet Salon</h1>
         </div>
-        <div class="flex gap-10 font-light uppercase text-sm tracking-wide">
-            <a href="#" class="hover:bg-white transition ">Contacto</a>
-            <a href="#" class="hover:underline transition-all">Servicios</a>
-            <a href="/about" class="hover:underline transition-all">Acerca de</a>
-            <a href="#" class="hover:underline transition-all">Chosto</a>
+        <div class="items-center gap-10 font-light uppercase text-sm tracking-wide hidden lg:flex">
+            <a href="#servicios" class=" transition hover:bg-white/30  p-3  rounded">Servicios</a>
+            <a href="#about" class=" transition p-3 hover:bg-white/30   rounded">Conocenos</a>
+            <a href="#" class=" transition p-3 hover:bg-white/30  rounded">Galeria</a>
+            <a href="#" class="transition p-3 hover:bg-white/30   rounded">Contacto</a>
+        </div>
+        <div class="flex items-center text-3xl lg:hidden">
+            <BarButton client:load/>
+        </div>
+        <div class="absolute">
+            <BarMenu client:load/>
         </div>
     </section>
 </nav>
