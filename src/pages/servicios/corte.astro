@@ -1,0 +1,33 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title='Isolet Salon - Corte'>
+    <div class="">
+        <section class="hero-section relative h-screen flex items-center justify-center">
+            <div class="absolute inset-0 bg-cover bg-center brightness-50" style="background-image: url('/demo.jpg');"></div>
+            <div class="flex flex-col gap-8 text-center text-white relative z-10 p-20 ">
+                <svg viewBox="0 0 100 5">
+                    <line x1="0" y1="0" x2="100" y2="0" stroke="white" />
+                </svg>
+                <h1 class="tracking-wider text-5xl lg:text-7xl  font-bold font-urbanist ">Corte</h1>
+                <svg viewBox="0 0 100 5">
+                    <line x1="0" y1="0" x2="100" y2="0" stroke="white" />
+                </svg>
+            </div>
+        </section>
+        <section class="descripcion-corte container mx-auto p-20 font-urbanist text-lg">
+            <h2 class="text-4xl font-bold mb-6">Renueva Tu Estilo con Nuestro Servicio de Corte</h2>
+            <p class="text-gray-700 mb-4">En nuestro salón de belleza, te ofrecemos servicios de corte de cabello personalizados para reflejar tu estilo y resaltar tus características únicas. Nuestros estilistas expertos están comprometidos a proporcionarte un corte que realce tu belleza y se adapte a tu personalidad.</p>
+        
+            <h3 class="text-2xl font-bold mb-2">Tipos de Cortes que Ofrecemos:</h3>
+            <ul class="list-disc ml-6 mb-4">
+                <li>Corte de Puntas</li>
+                <li>Corte de Estilo</li>
+                <!-- Agrega aquí otros tipos de cortes que ofreces -->
+            </ul>
+        
+            <p class="text-gray-700">Ya sea que estés buscando un cambio radical en tu estilo o simplemente desees mantener un corte fresco y actualizado, estamos aquí para asegurarnos de que te vayas con un corte que te haga sentir confiado y hermoso.</p>
+        </section>
+    </div>
+</Layout>

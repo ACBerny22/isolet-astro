@@ -5,18 +5,19 @@ interface ServiceCardProps{
     img_src:string
     title:string
     content:string
+    url:string
 
 }
 
-const { img_src, title, content } = Astro.props;
+const { img_src, title, content, url } = Astro.props;
 
 ---
 
 
-<div class="bg-white shadow-md group">
-    <a href="/servicios/peinado" class="flex flex-col gap-3">
-    <div class='w-full h-80 overflow-hidden group-hover:brightness-75 transition-all ease-out'>
-        <img src={img_src} alt="" class="w-full h-full object-cover " />
+<div class="bg-white shadow-md rounded group">
+    <a href={url} class="flex flex-col gap-3">
+    <div class='w-full h-80 rounded rounded-y overflow-hidden group-hover:brightness-75 transition-all ease-out'>
+        <img src={img_src} alt="" class="w-full h-full object-cover group-hover:scale-110 transition ease-out duration-700" />
     </div>
     <div class="py-5">
         <h1 class="font-bold text-center text-2xl font-urbanist tracking-wider">{title}</h1>
