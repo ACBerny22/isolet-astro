@@ -3,16 +3,6 @@ import { BsWhatsapp } from "react-icons/bs"
 import { FiMapPin } from "react-icons/fi";
 import { FaPhone } from "react-icons/fa6";
 
-if (Astro.request.method === "POST"){
-    try{
-        const data = await Astro.request.formData()
-        data.get("message")
-        console.log(data.get("message"))
-        
-    }catch(e){
-        console.log(e.message)
-    }
-}
 
 ---
 
