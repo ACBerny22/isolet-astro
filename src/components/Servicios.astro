@@ -5,12 +5,9 @@ import ServiceCard from "./ServiceCard.astro"
 
 <article class="flex flex-col gap-10 justify-center items-center" id="servicios">
     <h1 class="font-urbanist text-5xl">Servicios</h1>
-    <section>
-        <p class="text-center text-xl font-light">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla suscipit ac eros sed condimentum.
-            Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-            Curabitur eget libero risus. Fusce sit amet felis sem. Donec at quam in velit pulvinar tincidunt vel id massa. 
-        </p>
+    <section class="descripcion-servicios container mx-auto py-8 text-lg xl:text-xl font-light text-justify ">
+        <p class="text-gray-700 mb-4">En nuestro salón de belleza, nos dedicamos a proporcionar una experiencia completa y personalizada para realzar tu belleza y hacerte sentir increíble. Nuestro equipo de profesionales altamente capacitados ofrece una amplia gama de servicios diseñados para satisfacer todas tus necesidades de belleza y cuidado personal.</p>
+        <p class="text-gray-700">Desde servicios de corte de cabello modernos hasta tratamientos de coloración vibrantes, pasando por sesiones de maquillaje y cuidado de la piel, estamos aquí para ofrecerte una atención única y de calidad. Cada servicio es adaptado a tus preferencias y estilo personal, garantizando que te sientas seguro y satisfecho con los resultados.</p>
     </section>
     <section class="grid grid-cols-1 gap-5 lg:grid-cols-2 xl:grid-cols-3">
         <ServiceCard url="/servicios/corte" title="Corte" img_src='/port2.jpg' content="Cras vel dictum dui. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur eget libero risus. Fusce sit amet felis sem." ></ServiceCard>
